@@ -133,21 +133,31 @@ header {
   background-color: var(--clr-red);
 }
 @media (max-width: 400px) {
+  nav ul {
+    column-gap: 8vw;
+    padding-left: 15px;
+  }
+  .contact {
+    display: none;
+  }
+  .menu-container {
+    padding: 10px;
+  }
   .image {
-    height: 160px;
+    height: 150px;
   }
   .food-image {
-    width: 150px;
-    height: 160px;
+    width: 140px;
+    height: 180px;
     object-fit: cover;
   }
   .food-details {
     padding: 10px;
     background-color: white;
-    height: 160px;
+    height: 180px;
   }
   .food-name {
-    width: 130px;
+    width: 120px;
   }
 }
 @media (min-width: 800px) {
