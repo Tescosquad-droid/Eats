@@ -48,7 +48,7 @@ function start(foodDetails, id) {
 
   const searchBox = document.querySelector('.search-input')
   let search = ''
-  searchBox.addEventListener('keydown', (e) => {
+  searchBox.addEventListener('keyup', (e) => {
     setTimeout(() => {
       if (e.code === `Key${e.key.toUpperCase()}`) {
         search += e.key
