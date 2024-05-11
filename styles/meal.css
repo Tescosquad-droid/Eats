@@ -174,6 +174,17 @@ button:active {
 .clear {
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .search-input {
+    display: none;
+  }
+  .order-count {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    margin-right: 0px;
+  }
+}
 @media (min-width: 800px) {
   .image {
     height: 55vh;
