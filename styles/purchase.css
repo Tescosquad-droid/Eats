@@ -46,7 +46,6 @@ input::-webkit-inner-spin-button {
 }
 .container {
   width: 60vw;
-  min-height: 90vh;
   background-color: var(--clr-low-med-red);
   overflow-x: hidden;
   border-radius: 5px;
