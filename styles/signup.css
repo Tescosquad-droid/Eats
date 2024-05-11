@@ -1,0 +1,136 @@
+:root {
+  --clr-red: #DC3C3C;
+  --clr-med-red: #E36A69;
+  --clr-low-med-red: #F6D9D7;
+  --clr-low-red: #F8E5E5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  color: black;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alata';
+}
+body::selection {
+  background-color: var(--clr-med-red);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.15s;
+}
+span {
+  display: none;
+  position: absolute;
+}
+.image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -20;
+}
+.svg {
+  display: none;
+}
+.signup-container {
+  background-color: var(--clr-low-red);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(217, 217, 217);
+  position: absolute;
+  z-index: 2;
+}
+header {
+  text-align: center;
+  font-size: 3rem;
+}
+.input-container {
+  position: relative;
+}
+.input {
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.password-eye {
+  width: 25px;
+  position: absolute;
+  top: 32px;
+  right: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.placeholder {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  color: grey;
+  transition: all 0.2s;
+}
+.adjusted {
+  top: 0px;
+  left: 20px;
+  font-size: 13px;
+  padding: 0px 2px;
+  z-index: 100;
+  background-image: linear-gradient(var(--clr-low-red), white );
+  color: black;
+}
+.submit {
+  background-color: var(--clr-med-red);
+  color: white;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.submit:hover {
+  opacity: 0.9;
+}
+.submit:active {
+  opacity: 0.7;
+  transform: scale(95%);
+}
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  span {
+    display: grid;
+    top: 30px;
+    left: 5vw;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .image {
+    display: none;
+  }
+  .svg {
+    display: grid;
+    height: 60vh;
+    width: 50vw;
+  }
+  .signup-container {
+    right: 10vw;
+  }
+}

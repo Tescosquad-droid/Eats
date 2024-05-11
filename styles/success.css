@@ -1,0 +1,126 @@
+:root {
+  --clr-red: #DC3C3C;
+  --clr-med-red: #E36A69;
+  --clr-low-med-red: #F6D9D7;
+  --clr-low-red: #F8E5E5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto';
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-low-med-red);
+  -webkit-tap-highlight-color: transparent;
+}
+body::selection {
+  background-color: var(--clr-med-red);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.15s;
+}
+a:hover {
+  color: var(--clr-med-red);
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--clr-med-red);
+  width: 90%;
+}
+h1 {
+  margin-top: 20px;
+  text-align: left;
+  color: var(--clr-red);
+}
+.live-order {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  position: relative;
+}
+.track-container {
+  width: 65vw;
+}
+h2 {
+  margin-left: 10vw;
+}
+.shape-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px dashed var(--clr-med-red);
+  transition: all 0.15s;
+}
+.rotate {
+  animation: load 1.2s infinite forwards ease-in-out;
+}
+.rect {
+  height: 100px;
+  width: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.15s;
+}
+.current {
+  font-size: 1.15rem;
+  font-weight: 600;
+  transition: all 0.15s;
+  position: absolute;
+  left: 100px;
+}
+.display-current {
+  animation: display 1.5s 1 ease;
+}
+.current span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  display: block;
+}
+.navigate {
+  margin-top: 80px;
+  color: var(--clr-med-red);
+}
+.navigate:hover {
+  opacity: 0.8;
+}
+.navigate:active {
+  color: var(--clr-red);
+}
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes display {
+  0% {
+    opacity: 0;
+    left: 50;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 500px) {
+  .track-container {
+    width: 90vw;
+  }
+}

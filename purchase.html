@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="styles/purchase.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide-page">
+        <div class="personal-info detail">
+          <header>Personal Details</header>
+          <div class="name-container">
+            <div class="first-name-container">
+              <label for="first-name info">First Name</label>
+              <input type="text" class="info firstName">
+            </div>
+            <div class="last-name-container">
+              <label for="last-name">Last Name</label>
+              <input type="text" class="info lastName">
+            </div>
+          </div>
+          <div class="email-container">
+            <label for="email info">Email</label>
+            <input type="email" class="info email">
+            <p class="email-warning warning"></p>
+          </div>
+          <div class="number-container">
+            <label for="number">Phone Number</label>
+            <input type="tel" class="info number">
+            <p class="number-warning warning"></p>
+          </div>
+          <div class="dob-container">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="date" id="date" style="cursor: pointer;" class="info dob">
+            <p class="dob-warning warning"></p>
+          </div>
+          <p class="warning-1 warning"></p>
+          <button class="first-next">Next</button>
+        </div>
+        <div class="location-info detail">
+          <header>Location Details</header>
+          <div class="useLocationButton">
+            <button class="useLocation useButton">Use Previous Order Location</button>
+          </div>
+          <hr class="location-hr">
+          <div class="address-number">
+            <label for="address-number">Street Number</label>
+            <input type="number" class="info-2 streetNo">
+          </div>
+          <div class="address-name">
+            <label for="address-name">Street Name</label>
+            <input type="text" class="info-2 streetName">
+          </div>
+          <div>
+            <label for="state">State</label>
+            <select name="state" id="state" class="city">
+              <option value="Abia">Abia</option>
+              <option value="Adamawa">Adamawa</option>
+              <option value="Akwa Ibom">Akwa Ibom</option>
+              <option value="Anambra">Anambra</option>
+              <option value="Bauchi">Bauchi</option>
+              <option value="Bayelsa">Bayelsa</option>
+              <option value="Benue">Benue</option>
+              <option value="Borno">Borno</option>
+              <option value="Cross River">Cross River</option>
+              <option value="Delta">Delta</option>
+              <option value="Ebonyi">Ebonyi</option>
+              <option value="Edo">Edo</option>
+              <option value="Ekiti">Ekiti</option>
+              <option value="Enugu">Enugu</option>
+              <option value="Gombe">Gombe</option>
+              <option value="Imo">Imo</option>
+              <option value="Jigawa">Jigawa</option>
+              <option value="Kaduna">Kaduna</option>
+              <option value="Kano">Kano</option>
+              <option value="Katsina">Katsina</option>
+              <option value="Kebbi">Kebbi</option>
+              <option value="Kwara">Kwara</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Nassarawa">Nassarawa</option>
+              <option value="Niger">Niger</option>
+              <option value="Ogun">Ogun</option>
+              <option value="Ondo">Ondo</option>
+              <option value="Osun">Osun</option>
+              <option value="Oyo">Oyo</option>
+              <option value="Plateau">Plateau</option>
+              <option value="River">River</option>
+              <option value="Sokoto">Sokoto</option>
+              <option value="Taraba">Taraba</option>
+              <option value="Yobe">Yobe</option>
+              <option value="Zamfara">Zamfara</option>
+              <option value="FCT">FCT</option>
+            </select>
+          </div>
+          <p class="warning-2 warning"></p>
+          <div class="button-container">
+            <button class="first-prev">Previous</button>
+            <button class="second-next">Next</button>
+          </div>
+        </div>
+        <div class="payment-info detail">
+          <header>Payment Infomation</header>
+          <div>
+            <h3>Payment Method</h3>
+            <div class="payment-type">
+              
+            </div>
+            <p class="warning warning-3"></p>
+            <div class="amount-container">
+              <p class="delivery-amount">Delivery Fee: N 300</p>
+              <p>Meal Price: N <span class="price">2150</span></p>
+              <label for="amount">Total amount: N <span class="total"></span></label>
+            </div>
+          </div>
+          <div class="button-container payment-button-container">
+            <button class="second-prev">Previous</button>
+            <a class="href"><button class="third-next submit-1">Next</button></a>
+          </div>
+        </div>
+        <div class="account-info detail">
+          <div class="account-details">
+            <h3>Account Details</h3>
+            <p>Account Number: 0123459876</p>
+            <p>Bank Account: Access Bank</p>
+            <p>Account Name: Eats plc</p>
+            <button class="transfer">Transfer Made</button>
+            <div class="verifying-container">
+              
+            </div>
+          </div>
+          <div class="card-details">
+            <h3>Card Details</h3>
+            <div class="useAccountButton">
+              <button class="useAccount useButton">Use Previous Order Details</button>
+            </div>
+            <hr class="account-hr">
+            <div class="account-name">
+              <label for="account-name">Account Name</label>
+              <input type="text" class="accountName">
+            </div>
+            <div>
+              <label for="account-number">Card Number</label>
+              <input type="text" class="cardNo">
+            </div>
+            <div class="back-card-detail">
+              <input type="number" placeholder="CVV" class="cvv">
+              <input type="text" placeholder="MM/YY"  class="mmyy">
+            </div>
+            <div>
+              <label for="bank">Bank</label>
+              <select name="bank" id="bank" class="bank">
+                <option value="Access Bank">Access Bank</option>
+                <option value="Citibank">Citibank</option>
+                <option value="Ecobank">Ecobank</option>
+                <option value="Fidelity Bank">Fidelity Bank</option>
+                <option value="First Bank">First Bank</option>
+                <option value="GTB">GTB</option>
+                <option value="Heritage Bank">Heritage Bank</option>
+                <option value="Keystone Bank">Keystone Bank</option>
+                <option value="Optimus Bank">Optimus Bank</option>
+                <option value="Polaris Bank">Polaris Bank</option>
+                <option value="Stanbic Bank">Stanbic Bank</option>
+                <option value="Standard Chartered">Standard Chartered</option>
+                <option value="Sterling Bank">Sterling Bank</option>
+                <option value="UBA">UBA</option>
+                <option value="Union Bank">Union Bank</option>
+                <option value="Unity Bank">Unity Bank</option>
+                <option value="Wema Bank">Wema Bank</option>
+                <option value="Zenith Bank">Zenith Bank</option>
+              </select>
+            </div>
+            <div>
+              <label for="card-type">Card Type</label>
+              <select name="card" id="card-type" class="cardType">
+                <option value="Visa">Visa</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Verve">Verve</option>
+              </select>
+            </div>
+            <p class="warning-4 warning"></p>
+          </div>
+          <p class="warning-5 warning"></p>
+          <div class="button-container">
+            <button class="third-prev">Previous</button>
+            <a class="link"><button class="submit">Submit</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/purchase.js"></script>
+  </body>
+</html>

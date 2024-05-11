@@ -1,0 +1,160 @@
+:root {
+  --clr-red: #DC3C3C;
+  --clr-med-red: #E36A69;
+  --clr-low-med-red: #F6D9D7;
+  --clr-low-red: #F8E5E5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto';
+  color: black;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--clr-low-red);
+}
+body::selection {
+  background-color: var(--clr-med-red);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.15s;
+}
+a:hover {
+  color: var(--clr-low-red);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background-color: var(--clr-med-red);
+  padding: 10px 10px;
+}
+nav span {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 700;
+  font-family: 'Alata';
+  cursor:default;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 6vw;
+}
+nav ul li {
+  transition: all 0.15s;
+}
+nav ul li:hover {
+  color: var(--clr-low-red);
+  cursor: pointer;
+}
+main {
+  height: 50vh;
+  background-color: var(--clr-med-red);
+  padding: 20px 10vw;
+  display: flex;
+  align-items: center;
+}
+.preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: -20vw;
+}
+main p {
+  min-width: 10ch;
+  max-width: 20ch;
+  line-height: 6vh;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.food-thumbnail {
+  width: 35vw;
+  background-color: var(--clr-med-red);
+  object-fit: cover;
+}
+header {
+  margin: auto;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 20px 0;
+  text-align: center;
+  text-decoration:overline underline;
+}
+.menu-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 3vw;
+  row-gap: 3vh;
+  padding: 30px;
+}
+.food {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.image {
+  height: 200px;
+}
+.food-image {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+}
+.food-details {
+  padding: 10px;
+  background-color: white;
+  height: 160px;
+}
+.food-name {
+  width: 150px;
+}
+.check-button {
+  padding: 12px 25px;
+  border: none;
+  background-color: var(--clr-med-red);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.check-button:hover {
+  opacity: 0.8;
+}
+.check-button:active {
+  background-color: var(--clr-red);
+}
+@media (max-width: 400px) {
+  .image {
+    height: 160px;
+  }
+  .food-image {
+    width: 150px;
+    height: 160px;
+    object-fit: cover;
+  }
+  .food-details {
+    padding: 10px;
+    background-color: white;
+    height: 160px;
+  }
+  .food-name {
+    width: 130px;
+  }
+}
+@media (min-width: 800px) {
+  .preview {
+    column-gap: 10vw;
+  }
+  main p {
+    font-size: 2.1rem;
+  }
+}

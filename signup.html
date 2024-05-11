@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles/signup.css">
+  </head>
+  <body>
+    <img src="images/food-icons/photo-1490818387583-1baba5e638af.jpeg" alt="" class="image">
+    <div class="image-container">
+      <span>Eats.</span>
+      <img src="images/food-icons/undraw_eating_together_re_ux62.svg" alt="" class="svg">
+    </div>
+    <div class="signup-container">
+      <header>Signup</header>
+      <div class="input-container">
+        <input type="text" class="input js-username-input" data-identity="username">
+        <p class="placeholder js-username" data-input="username-input">Username</p>
+        <p class="username" style="display: none; color: var(--clr-red); margin-left: 10px;"></p>
+      </div>
+      <div class="input-container">
+        <input type="email" class="input js-email-input" data-identity="email">
+        <p class="placeholder js-email" data-input="email-input">Email</p>
+        <p class="email" style="display: none; color: var(--clr-red); margin-left: 10px;"></p>
+      </div>
+      <div class="input-container">
+        <input type="password" class="input js-password-input" data-identity="password">
+        <img src="images/food-icons/password-locked-logo.png" alt="" class="password-eye">
+        <p class="placeholder js-password" data-input="password-input">Password</p>
+        <p class="password" style="display: none; color: var(--clr-red); margin-left: 10px;"></p>
+      </div>
+      <div class="input-container">
+        <input type="number" class="input js-number-input" data-identity="number">
+        <p class="placeholder js-number"  data-input="number-input">Phone number</p>
+        <p class="number" style="display: none; color: var(--clr-red); margin-left: 10px;"></p>
+      </div>
+      <a class="tag"><button class="submit" type="submit">Submit</button></a>
+    </div>
+
+    <script src="scripts/signup.js"></script>
+  </body>
+</html>

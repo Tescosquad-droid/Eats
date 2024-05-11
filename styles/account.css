@@ -1,0 +1,98 @@
+:root {
+  --clr-red: #DC3C3C;
+  --clr-med-red: #E36A69;
+  --clr-low-med-red: #F6D9D7;
+  --clr-low-red: #F8E5E5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto';
+  color: black;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  background-color: var(--clr-low-med-red);
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+body::selection {
+  background-color: var(--clr-med-red);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.15s;
+}
+a:hover {
+  color: var(--clr-med-red);
+}
+p {
+  margin: 0;
+}
+.arrow {
+  width: 40px;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 20px;
+  top: 26px;
+}
+header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 25px 0;
+  text-align: center;
+}
+.account-container {
+  background-color: white;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+.accounts {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  background-color: darkgreen;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.name {
+  font-weight: 600;
+}
+.email {
+  font-weight: 400;
+}
+hr {
+  border: none;
+  border-top: 1px solid rgb(215, 215, 215);
+  margin: 20px 0;
+}
+.personal-details,
+.account-details {
+  row-gap: 12px;
+}
+p {
+  font-weight: 500;
+}
+input {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}

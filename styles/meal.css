@@ -1,0 +1,186 @@
+:root {
+  --clr-red: #DC3C3C;
+  --clr-med-red: #E36A69;
+  --clr-low-med-red: #F6D9D7;
+  --clr-low-red: #F8E5E5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto';
+  color: black;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--clr-low-red);
+}
+body::selection {
+  background-color: var(--clr-med-red);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.15s;
+}
+a:hover {
+  color: var(--clr-med-red);
+}
+.container {
+  padding-bottom: 20px;
+}
+nav {
+  position: absolute;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  column-gap: 30px;
+}
+.arrow-container {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+.arrow {
+  width: 40px;
+  z-index: 100;
+  transform: rotate(180deg);
+  cursor: pointer;
+  background-color: var(--clr-low-red);
+}
+.search-input {
+  padding: 8px 15px;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 150px;
+  max-width: 500px;
+  margin-left: 15px;
+  border: none;
+  background-color: var(--clr-low-med-red);
+  font-size: 1.1rem;
+  outline-color: var(--clr-low-med-red);
+  outline-offset: 3px;
+  outline-width: 0.5px;
+}
+.search-input::placeholder {
+  font-size: 1rem;
+  color: var(--clr-med-red);
+}
+.result {
+  position: absolute;
+  background-color: white;
+  top: 7vh;
+  width: 97%;
+  background-color: var(--clr-low-red);
+  margin-top: 5px;
+  border-radius: 8px;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  transition: all 0.15s;
+}
+.food-result {
+  cursor: pointer;
+  height: min-content; 
+  margin-bottom: 5px;
+  padding: 0 20px;
+  transition: all 0.3s;
+}
+hr {
+  margin: 0;
+  width: 98%;
+  border: 0.5px solid var(--clr-red);
+  border-bottom: none;
+  margin-left: 1%;
+}
+.result:last-child hr {
+  width: 0;
+}
+.order-count {
+  width: 120px;
+  height: 40px;
+  background-color: var(--clr-med-red);
+  border-radius: 10px;
+  margin-right: 15px;
+  padding: 8px;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.image {
+  height: 45vh;
+  width: 100%;
+  object-fit: cover;
+}
+.food-details {
+  padding: 0 20px;
+}
+.name {
+  font-size: 1.8rem;
+}
+.local-name span {
+  font-weight: 700;
+  color: var(--clr-med-red);
+}
+.price span {
+  font-weight: 700;
+  color: var(--clr-med-red);
+}
+.description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 4vh;
+  letter-spacing: 1px;
+}
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--clr-med-red);
+  color: white;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  background-color: var(--clr-red);
+}
+.navigate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+.navigate a {
+  color: var(--clr-med-red);
+}
+.navigate a:hover {
+  opacity: 0.8;
+}
+.navigate a:active {
+  color: var(--clr-red);
+}
+.clear {
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  .image {
+    height: 55vh;
+  }
+}
+@media (min-width: 1100px) {
+  .image {
+    height: 65vh;
+  }
+}

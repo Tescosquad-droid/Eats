@@ -1,0 +1,113 @@
+:root {
+  --clr-red: #DC3C3C;
+  --clr-med-red: #E36A69;
+  --clr-low-med-red: #F6D9D7;
+  --clr-low-red: #F8E5E5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  color: black;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Almarai';
+  line-height: 3vh;
+  background-color: var(--clr-low-med-red);
+  -webkit-tap-highlight-color: transparent;
+}
+body::selection {
+  background-color: var(--clr-med-red);
+  color: white;
+}
+.cooks {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  clip-path: polygon(0 78%, 11% 84%, 24% 89%, 38% 92%, 53% 93%, 66% 92%, 78% 89%, 89% 84%, 100% 77%, 100% 0, 0 0);
+}
+.about {
+  font-size: clamp(4rem, 7vw, 8rem);
+  text-align: center;
+}
+.arrow {
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.envelope {
+  width: 80vw;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: var(--clr-low-red);
+  border-radius: 20px;
+}
+.food-thumbnail {
+  width: 9rem;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.image1 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.image2 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.content1, .content2 {
+  padding: 0 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw;
+  column-gap: 5vw;
+}
+.container header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.action-call {
+  margin: 5vw;
+  line-height: 4vh;
+  font-size: 1.3rem;
+  color: var(--clr-med-red);
+}
+.partner-container {
+  width: 100%;
+  font-size: 1.1rem;
+  background-color: white;
+  padding: 5vw;
+}
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--clr-low-med-red);
+  font-family: 'Alata';
+  height: 40px;
+}
+@media (min-width: 700px) {
+  .envelope {
+    height: clamp(5rem, 160px, 180px);
+  }
+}
+@media (max-width: 500px) { 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
